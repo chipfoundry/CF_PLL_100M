@@ -1,0 +1,369 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO CF_PLL_100M_core
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN CF_PLL_100M_core 0 0 ;
+  SIZE 423.405 BY 354.06 ;
+  PIN vpwr_int
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 41.745 104.975 43.700 106.305 ;
+    END
+  END vpwr_int
+  PIN trim_b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 174.22 0.545 174.54 ;
+    END
+  END trim_b
+  PIN p[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 47.07 0.345 47.27 ;
+    END
+  END p[0]
+  PIN p[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 50.56 0.345 50.76 ;
+    END
+  END p[1]
+  PIN p[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 60.64 0.345 60.84 ;
+    END
+  END p[2]
+  PIN p[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 70.72 0.345 70.92 ;
+    END
+  END p[3]
+  PIN p[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 80.8 0.345 81 ;
+    END
+  END p[4]
+  PIN p[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 90.88 0.345 91.08 ;
+    END
+  END p[5]
+  PIN p[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 100.96 0.345 101.16 ;
+    END
+  END p[6]
+  PIN p[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 111.04 0.345 111.24 ;
+    END
+  END p[7]
+  PIN q[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 2.195 0.345 2.395 ;
+    END
+  END q[0]
+  PIN q[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 1.12 0.335 1.32 ;
+    END
+  END q[1]
+  PIN q[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 15.975 0.345 16.175 ;
+    END
+  END q[3]
+  PIN q[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0.000 17.04 0.345 17.24 ;
+    END
+  END q[2]
+  PIN lock_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 181.19 0.500 181.51 ;
+    END
+  END lock_out
+  PIN setb_buf
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 178.43 0.545 178.75 ;
+    END
+  END setb_buf
+  PIN pll_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 170.08 0.545 170.4 ;
+    END
+  END pll_out
+  PIN pd_vdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 175.68 0.545 176 ;
+    END
+  END pd_vdd
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met2 ;
+        RECT 41.290 0.085 43.890 1.005 ;
+    END
+  END vpwr
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met2 ;
+        RECT 56.360 0 66.360 1.55 ;
+    END
+  END vgnd
+  PIN sub
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 50.860 0 51.860 0.905 ;
+    END
+  END sub
+  PIN nwl
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 49.720 0 50.720 0.905 ;
+    END
+  END nwl
+  PIN lock_wait[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 179.35 0.545 179.67 ;
+    END
+  END lock_wait[1]
+  PIN q_ctr_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 47.750 353.625 48.070 354.06 ;
+    END
+  END q_ctr_out
+  PIN lock_wait[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 178.89 0.545 179.21 ;
+    END
+  END lock_wait[0]
+  PIN vco_gain[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 169.16 0.545 169.48 ;
+    END
+  END vco_gain[1]
+  PIN vco_gain[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 169.62 0.545 169.94 ;
+    END
+  END vco_gain[0]
+  PIN test[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 182.57 0.400 182.89 ;
+    END
+  END test[2]
+  PIN test[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 183.03 0.400 183.35 ;
+    END
+  END test[1]
+  PIN test[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 183.49 0.400 183.81 ;
+    END
+  END test[0]
+  PIN VctrlIO
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 171.92 0.545 172.24 ;
+    END
+  END VctrlIO
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 176.98 0.545 177.3 ;
+    END
+  END reset
+  PIN ref
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 182.11 0.305 182.43 ;
+    END
+  END ref
+  PIN pd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 176.52 0.545 176.84 ;
+    END
+  END pd
+  PIN p_ctr_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 47.290 353.625 47.610 354.06 ;
+    END
+  END p_ctr_out
+  PIN icpsel[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 172.84 0.545 173.16 ;
+    END
+  END icpsel[2]
+  PIN icpsel[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 173.3 0.545 173.62 ;
+    END
+  END icpsel[1]
+  PIN icpsel[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 173.76 0.545 174.08 ;
+    END
+  END icpsel[0]
+  PIN i_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 171 0.545 171.32 ;
+    END
+  END i_in
+  PIN delay[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 177.51 0.545 177.83 ;
+    END
+  END delay[1]
+  PIN delay[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0.000 177.97 0.545 178.29 ;
+    END
+  END delay[0]
+  PROPERTY SDLglobal "" ;
+  PROPERTY SDLpower "vpwr" ;
+  PROPERTY SDLground "vgnd" ;
+  OBS
+    LAYER li1 ;
+      RECT 2.945 0 426.350 354.06 ;
+    LAYER met1 ;
+      RECT 2.945 0 41.745 354.06 ;
+      RECT 41.745 0 43.700 104.975 ;
+      RECT 41.745 106.305 43.700 354.06 ;
+      RECT 43.700 0 47.290 354.06 ;
+      RECT 47.290 0 47.610 353.625 ;
+      RECT 47.610 0 47.750 354.06 ;
+      RECT 47.750 0 48.070 353.625 ;
+      RECT 48.070 0 49.720 354.06 ;
+      RECT 49.720 0.905 50.720 354.06 ;
+      RECT 50.720 0 50.860 354.06 ;
+      RECT 50.860 0.905 51.860 354.06 ;
+      RECT 51.860 0 426.350 354.06 ;
+    LAYER met2 ;
+      RECT 2.945 0 41.290 354.06 ;
+      RECT 41.290 0 43.890 0.085 ;
+      RECT 41.290 1.005 43.890 354.06 ;
+      RECT 43.890 0 56.360 354.06 ;
+      RECT 56.360 1.55 66.360 354.06 ;
+      RECT 66.360 0 426.350 354.06 ;
+    LAYER met3 ;
+      RECT 2.945 0 426.350 354.06 ;
+  END
+END CF_PLL_100M_core
+
+END LIBRARY

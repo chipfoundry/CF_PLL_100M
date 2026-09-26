@@ -1,0 +1,24 @@
+info:
+  name: CF_PLL_100M
+  description: 100 MHz System PLL (CF_PLL_100M) is a ChipFoundry hard-macro blackbox
+    on SkyWater 130 nm.
+  repo: https://github.com/chipfoundry/CF_PLL_100M
+  owner: ChipFoundry
+  license: proprietary
+  author: ChipFoundry
+  email: support@chipfoundry.io
+  version: 0.2.0
+  date: 9-26-2026
+  category: analog
+  tags:
+  - CF_PLL_100M
+  bus: n/a
+  type: hard
+  maturity: Production
+  width: '453.405'
+  height: '384.06'
+  technology: sky130
+  digital_supply_voltage: n/a
+  analog_supply_voltage: n/a
+  clock_freq_mhz: n/a
+  cell_count: '2'

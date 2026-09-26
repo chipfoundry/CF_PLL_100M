@@ -1,0 +1,418 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO CF_PLL_100M
+  CLASS BLOCK ;
+  ORIGIN 0 0 ;
+  FOREIGN CF_PLL_100M 0 0 ;
+  SIZE 453.405 BY 384.06 ;
+  PIN vpwr_int
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 56.745 119.975 58.7 121.305 ;
+    END
+  END vpwr_int
+  PIN trim_b
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 189.22 15.545 189.59 ;
+    END
+  END trim_b
+  PIN p[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 62.02 15.345 62.32 ;
+    END
+  END p[0]
+  PIN p[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 65.51 15.345 65.81 ;
+    END
+  END p[1]
+  PIN p[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 75.59 15.345 75.89 ;
+    END
+  END p[2]
+  PIN p[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 85.67 15.345 85.97 ;
+    END
+  END p[3]
+  PIN p[4]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 95.75 15.345 96.05 ;
+    END
+  END p[4]
+  PIN p[5]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 105.83 15.345 106.13 ;
+    END
+  END p[5]
+  PIN p[6]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 115.91 15.345 116.21 ;
+    END
+  END p[6]
+  PIN p[7]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 125.99 15.345 126.29 ;
+    END
+  END p[7]
+  PIN q[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 17.145 15.345 17.445 ;
+    END
+  END q[0]
+  PIN q[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 16.07 15.34 16.37 ;
+    END
+  END q[1]
+  PIN q[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 30.925 15.345 31.225 ;
+    END
+  END q[3]
+  PIN q[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met2 ;
+        RECT 0 31.99 15.345 32.29 ;
+    END
+  END q[2]
+  PIN lock_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 196.14 15.5 196.56 ;
+    END
+  END lock_out
+  PIN setb_buf
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 193.43 15.545 193.75 ;
+    END
+  END setb_buf
+  PIN pll_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 185.08 15.545 185.45 ;
+    END
+  END pll_out
+  PIN pd_vdd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 190.63 15.545 191.05 ;
+    END
+  END pd_vdd
+  PIN vpwr
+    DIRECTION INPUT ;
+    USE POWER ;
+    PORT
+      LAYER met2 ;
+        RECT 56.29 15.085 58.89 16.005 ;
+        RECT 56.29 13.24 58.89 16.005 ;
+      LAYER met3 ;
+        RECT 56.29 13.24 66.79 13.72 ;
+        RECT 1.23 374.36 452.175 377.46 ;
+      LAYER met4 ;
+        RECT 5 0 8.1 384.06 ;
+        RECT 35 0 38.1 384.06 ;
+        RECT 65 0 68.1 384.06 ;
+        RECT 95 0 98.1 384.06 ;
+        RECT 125 0 128.1 384.06 ;
+        RECT 155 0 158.1 384.06 ;
+        RECT 185 0 188.1 384.06 ;
+        RECT 215 0 218.1 384.06 ;
+        RECT 245 0 248.1 384.06 ;
+        RECT 275 0 278.1 384.06 ;
+        RECT 305 0 308.1 384.06 ;
+        RECT 335 0 338.1 384.06 ;
+        RECT 365 0 368.1 384.06 ;
+        RECT 395 0 398.1 384.06 ;
+        RECT 425 0 428.1 384.06 ;
+    END
+  END vpwr
+  PIN vgnd
+    DIRECTION INPUT ;
+    USE GROUND ;
+    PORT
+      LAYER met2 ;
+        RECT 71.36 15 81.36 16.55 ;
+        RECT 71.36 14.12 81.36 16.55 ;
+      LAYER met3 ;
+        RECT 71.36 14.12 81.79 14.6 ;
+        RECT 1.23 369.56 452.175 372.66 ;
+      LAYER met4 ;
+        RECT 20 0 23.1 384.06 ;
+        RECT 50 0 53.1 384.06 ;
+        RECT 80 0 83.1 384.06 ;
+        RECT 110 0 113.1 384.06 ;
+        RECT 140 0 143.1 384.06 ;
+        RECT 170 0 173.1 384.06 ;
+        RECT 200 0 203.1 384.06 ;
+        RECT 230 0 233.1 384.06 ;
+        RECT 260 0 263.1 384.06 ;
+        RECT 290 0 293.1 384.06 ;
+        RECT 320 0 323.1 384.06 ;
+        RECT 350 0 353.1 384.06 ;
+        RECT 380 0 383.1 384.06 ;
+        RECT 410 0 413.1 384.06 ;
+        RECT 440 0 443.1 384.06 ;
+    END
+  END vgnd
+  PIN lock_wait[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 194.35 15.545 194.72 ;
+    END
+  END lock_wait[1]
+  PIN q_ctr_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 62.75 368.625 63.07 384.06 ;
+    END
+  END q_ctr_out
+  PIN lock_wait[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 193.89 15.545 194.21 ;
+    END
+  END lock_wait[0]
+  PIN vco_gain[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 184.11 15.545 184.48 ;
+    END
+  END vco_gain[1]
+  PIN vco_gain[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 184.62 15.545 184.94 ;
+    END
+  END vco_gain[0]
+  PIN test[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 197.57 15.4 197.89 ;
+    END
+  END test[2]
+  PIN test[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 198.03 15.4 198.35 ;
+    END
+  END test[1]
+  PIN test[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 198.49 15.4 198.86 ;
+    END
+  END test[0]
+  PIN VctrlIO
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 186.87 15.545 187.29 ;
+    END
+  END VctrlIO
+  PIN reset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 191.98 15.545 192.32 ;
+    END
+  END reset
+  PIN ref
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 197.06 15.305 197.43 ;
+    END
+  END ref
+  PIN pd
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 191.47 15.545 191.84 ;
+    END
+  END pd
+  PIN p_ctr_out
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 62.29 368.625 62.61 384.06 ;
+    END
+  END p_ctr_out
+  PIN icpsel[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 187.79 15.545 188.16 ;
+    END
+  END icpsel[2]
+  PIN icpsel[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 188.3 15.545 188.62 ;
+    END
+  END icpsel[1]
+  PIN icpsel[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 188.76 15.545 189.08 ;
+    END
+  END icpsel[0]
+  PIN i_in
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 185.95 15.545 186.37 ;
+    END
+  END i_in
+  PIN delay[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 192.46 15.545 192.83 ;
+    END
+  END delay[1]
+  PIN delay[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met1 ;
+        RECT 0 192.97 15.545 193.29 ;
+    END
+  END delay[0]
+  OBS
+    LAYER li1 ;
+      RECT 0 0 453.405 384.06 ;
+    LAYER met1 ;
+      RECT 0 0 15 184.11 ;
+      RECT 0 184.48 15 184.62 ;
+      RECT 0 184.94 15 185.08 ;
+      RECT 0 185.45 15 185.95 ;
+      RECT 0 186.37 15 186.87 ;
+      RECT 0 187.29 15 187.79 ;
+      RECT 0 188.16 15 188.3 ;
+      RECT 0 188.62 15 188.76 ;
+      RECT 0 189.08 15 189.22 ;
+      RECT 0 189.59 15 190.63 ;
+      RECT 0 191.05 15 191.47 ;
+      RECT 0 191.84 15 191.98 ;
+      RECT 0 192.32 15 192.46 ;
+      RECT 0 192.83 15 192.97 ;
+      RECT 0 193.29 15 193.43 ;
+      RECT 0 193.75 15 193.89 ;
+      RECT 0 194.21 15 194.35 ;
+      RECT 0 194.72 15 196.14 ;
+      RECT 0 196.56 15 197.06 ;
+      RECT 0 197.43 15 197.57 ;
+      RECT 0 197.89 15 198.03 ;
+      RECT 0 198.35 15 198.49 ;
+      RECT 0 198.86 15 384.06 ;
+      RECT 438.405 0 453.405 384.06 ;
+      RECT 15 0 438.405 15 ;
+      RECT 15 369.06 62.29 384.06 ;
+      RECT 62.61 369.06 62.75 384.06 ;
+      RECT 63.07 369.06 438.405 384.06 ;
+    LAYER met2 ;
+      RECT 0 0 15 16.07 ;
+      RECT 0 16.37 15 17.145 ;
+      RECT 0 17.445 15 30.925 ;
+      RECT 0 31.225 15 31.99 ;
+      RECT 0 32.29 15 62.02 ;
+      RECT 0 62.32 15 65.51 ;
+      RECT 0 65.81 15 75.59 ;
+      RECT 0 75.89 15 85.67 ;
+      RECT 0 85.97 15 95.75 ;
+      RECT 0 96.05 15 105.83 ;
+      RECT 0 106.13 15 115.91 ;
+      RECT 0 116.21 15 125.99 ;
+      RECT 0 126.29 15 384.06 ;
+      RECT 438.405 0 453.405 384.06 ;
+      RECT 15 0 56.29 15 ;
+      RECT 56.29 0 58.89 13.24 ;
+      RECT 58.89 0 71.36 15 ;
+      RECT 71.36 0 81.36 14.12 ;
+      RECT 81.36 0 438.405 15 ;
+      RECT 15 369.06 438.405 384.06 ;
+  END
+END CF_PLL_100M
+
+END LIBRARY
