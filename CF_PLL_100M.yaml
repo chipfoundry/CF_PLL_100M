@@ -7,8 +7,8 @@ info:
   license: proprietary
   author: ChipFoundry
   email: support@chipfoundry.io
-  version: 0.2.0
-  date: 9-26-2026
+  version: 0.2.1
+  date: 11-7-2026
   category: analog
   tags:
   - CF_PLL_100M
